@@ -20,6 +20,9 @@
 <?php
 if($_SERVER['REQUEST_METHOD'] == 'POST'){
     $year = htmlspecialchars($_POST['year']);
+    if ((!isset($year)) || (!is_numeric($year)) || ($year < 1)){
+        exit("Проверьте введенные данные");
+    }
 
     function CreateCalendar($year) {
         $all_mouth = array(

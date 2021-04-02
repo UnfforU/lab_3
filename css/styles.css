@@ -25,7 +25,6 @@ body{
 }
 
 .calendar_item table {
-    border-collapse: collapse;
     width: 100%;
 }
 .calendar_item th {
